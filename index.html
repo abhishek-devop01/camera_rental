@@ -1,15 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Camera Rental</title>
-     <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camera Rental - Photoshoot Themes</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
 <body>
-     <main>
 
-     </main>
-     
+  <!-- NAVBAR  -->
+  <nav class="navbar">
+    <div class="logo">CamRent</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Themes</a></li>
+      <li><a href="#">Gear</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <!-- SLIDER hai -->
+<section class="slider">
+  <div class="slider-track">
+    <div class="slide"><img src="pic1.jpg" alt="Slide 1"></div>
+    <div class="slide"><img src="pic2.jpg" alt="Slide 2"></div>
+    <div class="slide"><img src="pic3.jpg" alt="Slide 3"></div>
+    <div class="slide"><img src="pic4.jpg" alt="Slide 1 duplicate"></div>
+     <!-- duplicate krna aur chaheya toh -->
+    <div class="slide"><img src="pic2.jpg" alt="Slide 2 duplicate"></div>
+    <div class="slide"><img src="pic1.jpg" alt="Slide 3 duplicate"></div>
+  </div>
+</section>
+
+
+
+ <!-- SEARCH BAR hai -->
+<div class="search-bar">
+  <input type="text" placeholder="Search for 'Lens'">
+  <button><i class="fas fa-search"></i></button>
+</div>
+
+
+
+
+  <!-- THEMES page -->
+  <section class="themes-section">
+    <h1>What are you planning to shoot?</h1>
+    <div class="themes-container">
+
+      <div class="theme-card" onclick="openModal('wedding')">
+        <img src="pic1.jpg" alt="Wedding Collection">
+        <div class="overlay">
+          <h2><i class="fas fa-ring"></i> Wedding Collection</h2>
+          <button>Explore Gear</button>
+        </div>
+      </div>
+
+      <div class="theme-card" onclick="openModal('travel')">
+        <img src="pic2.jpg" alt="Travel Kit">
+        <div class="overlay">
+          <h2><i class="fas fa-plane"></i> Travel Kit</h2>
+          <button>Explore Gear</button>
+        </div>
+      </div>
+
+      <div class="theme-card" onclick="openModal('vlogging')">
+        <img src="pic3.jpg" alt="Vlogging Setup">
+        <div class="overlay">
+          <h2><i class="fas fa-video"></i> Vlogging Setup</h2>
+          <button>Explore Gear</button>
+        </div>
+      </div>
+
+      <div class="theme-card" onclick="openModal('studio')">
+        <img src="pic4.jpg" alt="Studio Setup">
+        <div class="overlay">
+          <h2><i class="fas fa-camera-retro"></i> Studio Setup</h2>
+          <button>Explore Gear</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MODAL kuch mat kro isko -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

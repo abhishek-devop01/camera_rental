@@ -1,0 +1,259 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f8f9fa;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+  animation: logoAnim 2s ease-in-out infinite;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  background-image: linear-gradient(to right, #ff4a57, #ff8e1c, #3f94f8);
+  background-clip: text;
+  color: transparent;
+}
+
+@keyframes logoAnim {
+  0% {
+    transform: repeat(0deg);
+    letter-spacing: 2px;
+    background-position: 0% 50%;
+  }
+  50% {
+     transform: repeat(360deg);
+    letter-spacing: 5px;
+     background-position: 100% 50%;  
+  }
+  100% {
+    transform: repeat(0deg);
+    letter-spacing: 2px;
+    background-position: 0% 50%;
+  }
+}
+
+/* Hover effect hai  logo  wala*/
+.logo:hover {
+  animation: logoHover 0.5s ease-in-out forwards;
+}
+
+@keyframes logoHover {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2) rotate(10deg);
+  }
+}
+
+
+.navbar { 
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: linear-gradient(135deg, #403437, #57494a);
+  color: #ffffffbc;
+  box-shadow: 0 4px 15px rgba(223, 10, 10, 0.037);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+
+}
+
+  
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: rgb(234, 234, 234);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #e87586;
+}
+/* Slider ka hai */
+.slider {
+  overflow: hidden;
+  margin-top: 20px;
+  width: 100%;
+  background: #222;
+  padding: 20px 0;
+}
+
+.slider-track {
+  display: flex;
+  width: calc(250px * 6);
+  animation: scroll 20s linear infinite;
+}
+
+.slide {
+  width: 250px;
+  flex-shrink: 0;
+  padding: 0 10px;
+}
+
+.slide img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-250px * 3)); }
+}
+/* Search Bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto;
+  max-width: 600px;
+  background: #d9dbdb;
+  border-radius: 50px;
+  overflow: hidden;
+  padding: 5px;
+  /* border: solid 2px; */
+
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+}
+
+.search-bar button {
+  background: #49a106; 
+  border: none;
+  padding: 12px 18px;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Themes Section */
+.themes-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.themes-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.theme-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.theme-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.theme-card:hover {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.theme-card:hover .overlay {
+  opacity: 1;
+}
+
+.overlay button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #ffc107;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .themes-container {
+    grid-template-columns: 1fr;
+  }
+}
