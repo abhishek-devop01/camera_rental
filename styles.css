@@ -60,7 +60,7 @@ body {
    display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding: 0px 20px;
   background: linear-gradient(135deg, #403437, #57494a);
   color: #ffffffbc;
   box-shadow: 0 4px 15px rgba(223, 10, 10, 0.037);
@@ -127,19 +127,21 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 30px auto;
+  margin: 10px auto;
   max-width: 600px;
   background: #d9dbdb;
   border-radius: 50px;
+  color: black;
   overflow: hidden;
   /* padding: 5px; */
   /* border: solid 2px; */
+  width: 100%;
 
 }
 
 .search-bar input {
   flex: 1;
-  padding: 15px 20px;
+  padding: 1px 20px;
   border: none;
   outline: none;
   background: transparent;
