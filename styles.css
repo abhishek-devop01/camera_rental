@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: gilroy, sans-serif;
   background: #f8f9fa;
 }
 .logo {
@@ -23,7 +23,7 @@ body {
   color: transparent;
 }
 
-@keyframes logoAnim {
+/* @keyframes logoAnim {
   0% {
     transform: repeat(0deg);
     letter-spacing: 2px;
@@ -39,7 +39,7 @@ body {
     letter-spacing: 2px;
     background-position: 0% 50%;
   }
-}
+} */
 
 /* Hover effect hai  logo  wala*/
 .logo:hover {
@@ -132,7 +132,7 @@ body {
   background: #d9dbdb;
   border-radius: 50px;
   overflow: hidden;
-  padding: 5px;
+  /* padding: 5px; */
   /* border: solid 2px; */
 
 }
@@ -149,7 +149,7 @@ body {
 .search-bar button {
   background: #49a106; 
   border: none;
-  padding: 12px 18px;
+  padding: 16px 18px;
   border-radius: 50%;
   color: white;
   cursor: pointer;
@@ -164,6 +164,10 @@ body {
 .themes-section {
   padding: 50px 20px;
   text-align: center;
+}
+.themes-section>h1{
+  font-size: 7rem;
+
 }
 
 .themes-container {
