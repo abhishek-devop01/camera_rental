@@ -1,4 +1,5 @@
-gsap.registerPlugin(ScrollTrigger);
+function featureWork() {
+     gsap.registerPlugin(ScrollTrigger);
 
 document.addEventListener("DOMContentLoaded", function(){
      const cards = [
@@ -56,3 +57,5 @@ document.addEventListener("DOMContentLoaded", function(){
           });
      });
 })
+}
+featureWork();
