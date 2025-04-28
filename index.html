@@ -1,104 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Camera Rental - Photoshoot Themes</title>
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CamRent</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js" integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js" integrity="sha512-AcqPGqrrAEtEwe+ADO5R8RbdFi7tuU7b/A2cJJH0Im0D18NRk5p5s4B3E5PMuO81KFw0ClN7J5SHVUJz7KOb0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <div id="href">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Shop</a>
+          <a href="#">Pages</a>
+        </div>
 
-</head>
-<body>
+        <div id="logo">
+          <img src="./asset/img.svg" alt="">
+        </div>
 
-  <!-- NAVBAR  -->
-  <nav class="navbar">
-    <div class="logo">CamRent</div>
-    <div class="search-bar">
-      <input type="text" placeholder="Search for 'Lens'">
-      <button><i class="fas fa-search"></i></button>
+        <div class="flex gap-4 items-center space-x-4">
+          <div id="menu"><i class="ri-menu-line"></i></div>
+          <h3><i class="link ri-facebook-circle-fill"></i></h3>
+          <h3><i class="link ri-instagram-fill"></i></h3>
+          <h3><i class="link ri-twitter-x-fill"></i></h3>
+          <h3><i class="link ri-dribbble-line"></i></h3>
+        </div>
+      </nav>
+
+      <div id="hero">
+        <h1>
+          Clicker <br />
+          Photography
+        </h1>
+      </div>
+
+      <div id="marque">
+        <div>
+          <h1></h1>
+        </div>
+      </div>
+
+      <div id="hero-text">
+        <p>Let’s take your photograph to next level</p>
+        <p>Since 2025</p>
+      </div>
+
+      <div class="hero-img">
+        <img src="./asset/img1.jpg" alt="" />
+        <img id="middle-img" src="./asset/img2.jpg" alt="" />
+        <img src="./asset/img3.jpg" alt="" />
+      </div>
+
+      <div class="work-info">
+        <h3>Let’s Work Together</h3>
+        <p>I am Available at</p>
+        <p>example@gmail.com</p>
+        <p class="phNo">+9 (245) 326-02-22</p>
+      </div>
+
+      <!-- page 2 -->
+
+      <div class="left-text">
+        <h1>
+          The Love For Photography Excites Me Since From My Childhood Days.
+        </h1>
+      </div>
+
+      <div class="page-2">
+        <div class="page-2-img">
+          <img src="./asset/img-4.jpg" alt="" />
+          <h1>Billy Vasquez</h1>
+          <p>Photographer, Videographer, Cinematographer, Editor etc.</p>
+        </div>
+
+        <div class="page-2-text">
+          <h2 id="p2-text">
+            Hi, I am Billy Vasquez Brands & People Photography Based In Moscow &
+            Focusing on Fashion, Commercial, Personal
+          </h2>
+          <p id="p2-text-2">
+            For who thoroughly her boy estimating conviction. Removed demands
+            expense account in outward tedious do. Particular way thoroughly
+            unaffected projection favorable yet answered Jennings perceive
+            laughing six.
+          </p>
+          <button id="btn">
+            About us <img src="./asset/img-5.svg" alt="" />
+          </button>
+
+          <div class="about-counter">
+            <div class="counter-item">
+              <h5 class="heading-h3">8+</h5>
+              <p>Years Of Experience</p>
+            </div>
+            <div class="counter-item">
+              <h5 class="heading-h3">100K</h5>
+              <p>YouTube Subscribers</p>
+            </div>
+            <div class="counter-item">
+              <h5 class="heading-h3">10M</h5>
+              <p>Total Views</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container">
+      <section class="wrapper-404">
+        <h1 id="h1">Featured Works</h1>
+
+        <div id="card-1" class="card ">
+          <img id="p2-img" src="./asset/63be670c814110058fcfd728_work-image-01.jpg" alt="">
+        </div>
+        <div id="card-2" class="card ">
+          <img id="p2-img" src="./asset/63be6728508ab60f816beeb9_work-image-05.jpg" alt="">
+        </div>
+        <div id="card-3" class="card ">
+          <img id="p2-img" src="./asset/63be672ec6313b949946be6e_work-image-06.jpg" alt="">
+        </div>
+        <div id="card-4" class="card ">
+          <img id="p2-img" src="./asset/63be8c06482366734d310b94_work-image-04.jpg" alt="">
+        </div>
+
+      </section>
+      <section class="outer">
+        <h1>
+          For who thoroughly her boy estimating conviction. Removed demands expense account in outward tedious do.
+        </h1>
+      </section>
     </div>
-    <ul class="nav-links">
-      <li><a class="text-lg  text-bold" href="#">Home</a></li>
-      <li><a class="text-lg  text-bold" href="#">Themes</a></li>
-      <li><a class="text-lg  text-bold" href="#">Gear</a></li>
-      <li><a class="text-lg  text-bold" href="#">About</a></li>
-      <li><a class="text-lg  text-bold" href="#">Contact</a></li>
-    </ul>
-  </nav>
-  <!-- SLIDER hai -->
-<section class="slider">
-  <div class="slider-track">
-    <div class="slide"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Slide 1"></div>
-    <div class="slide"><img src="https://images.unsplash.com/photo-1538531048068-aef582996426?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Slide 2"></div>
-    <div class="slide"><img src="https://images.unsplash.com/photo-1710887030475-f9077ee433b5?q=80&w=1543&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Slide 3"></div>
-    <div class="slide"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Slide 1 duplicate"></div>
-     <!-- duplicate krna aur chaheya toh -->
-    <div class="slide"><img src="https://images.unsplash.com/photo-1538531048068-aef582996426?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Slide 2 duplicate"></div>
-    <div class="slide"><img src="https://images.unsplash.com/photo-1710887030475-f9077ee433b5?q=80&w=1543&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Slide 3 duplicate"></div>
-    <div class="slide"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Slide 1"></div>
-    <div class="slide"><img src="https://images.unsplash.com/photo-1538531048068-aef582996426?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Slide 2"></div>
-    <div class="slide"><img src="https://images.unsplash.com/photo-1710887030475-f9077ee433b5?q=80&w=1543&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Slide 3"></div>
+    </main>
 
-  </div>
-</section>
-
-
-
- <!-- SEARCH BAR hai -->
-
-
-
-
-
-  <!-- THEMES page -->
-  <section class="themes-section">
-    <h1 class="font-black">Categories</h1>
-    <div class="themes-container">
-
-      <div class="theme-card" onclick="openModal('wedding')">
-        <img src="https://images.unsplash.com/photo-1640654454819-34e53d3ef40a?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Wedding Collection">
-        <div class="overlay over">
-          <h2><i class="fas fa-ring"></i> Wedding Collection</h2>
-          <button>Explore Gear</button>
-        </div>
-      </div>
-
-      <div class="theme-card" onclick="openModal('travel')">
-        <img src="https://plus.unsplash.com/premium_photo-1683306661472-d7bd9497c82a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Travel Kit">
-        <div class="overlay">
-          <h2><i class="fas fa-plane"></i> Travel Kit</h2>
-          <button>Explore Gear</button>
-        </div>
-      </div>
-
-      <div class="theme-card" onclick="openModal('vlogging')">
-        <img src="https://plus.unsplash.com/premium_photo-1684783847972-1b2406aa4cc8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHx8" alt="Vlogging Setup">
-        <div class="overlay">
-          <h2><i class="fas fa-video"></i> Vlogging Setup</h2>
-          <button>Explore Gear</button>
-        </div>
-      </div>
-
-      <div class="theme-card" onclick="openModal('studio')">
-        <img src="https://images.unsplash.com/photo-1545861163-d75d945d8dd5?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Studio Setup">
-        <div class="overlay">
-          <h2><i class="fas fa-camera-retro"></i> Studio Setup</h2>
-          <button>Explore Gear</button>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- MODAL kuch mat kro isko -->
-  <div id="modal" class="modal">
-    <div class="modal-content">
-      <span class="close-btn">&times;</span>
-      <div id="modal-body"></div>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
