@@ -68,7 +68,7 @@ function landingPage(){
       scrollTrigger: {
         trigger: ".intro",
         start: "top center",
-        end: "top 100%",
+        end: "top 10%",
         scrub: true,
         onUpdate(self) {
           const p = self.progress;
