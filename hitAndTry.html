@@ -1,9 +1,13 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>CamRent Showreel</title>
     <link rel="stylesheet" href="demo.css" />
   </head>
   <body>
@@ -11,7 +15,6 @@
       <div class="logo">
         <a href="#">logo</a>
       </div>
-
       <div class="links">
         <a href="#">Home</a>
         <a href="#">About</a>
@@ -22,46 +25,43 @@
 
     <section class="hero">
       <h1>CamRent</h1>
-
       <div class="hero-copy">
-        <p>One Subscription, endless web design.</p>
+        <p>One Subscription, endless memories journey.</p>
         <p>(scroll)</p>
       </div>
     </section>
+
     <section class="intro">
+      <!-- Desktop -->
       <div class="video-container-desktop">
         <div class="video-preview">
-          <div class="video-wrapper">
-            <iframe
-              src="https://videos.pexels.com/video-files/31710201/13510796_2560_1440_30fps.mp4"
-              frameborder="0"
-              allow="autoplay; fullscreen"
-              referrerpolicy="no-referrer"
-              loading="lazy"
-              title="CamRent video"
-              credentialless
-            ></iframe>
-          </div>
+          <video
+            src="./asset/1743494589609.mp4"
+            autoplay
+            muted
+            loop
+            loading="lazy"
+            title="CamRent video"
+          ></video>
         </div>
         <div class="video-title">
-          <p>PRO Showreel</p>
-          <p>2023 - 2024</p>
+          <p>.</p>
+          <p>.</p>
         </div>
       </div>
 
+      <!-- Mobile -->
       <div class="video-container-mobile">
         <div class="video-preview">
-          <div class="video-wrapper">
-            <iframe
-              src="https://videos.pexels.com/video-files/31710201/13510796_2560_1440_30fps.mp4"
-              frameborder="0"
-              allow="autoplay; fullscreen"
-              referrerpolicy="no-referrer"
-              loading="lazy"
-              title="CamRent video"
-              credentialless
-            ></iframe>
-          </div>
+          <video
+            src="./asset/1743494589609.mp4"
+            controls
+            autoplay
+            muted
+            loop
+            loading="lazy"
+            title="CamRent video"
+          ></video>
         </div>
         <div class="video-title">
           <p>PRO Showreel</p>
@@ -71,21 +71,10 @@
     </section>
 
     <section class="outro">
-     <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
     </section>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"
-      integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js"
-      integrity="sha512-AcqPGqrrAEtEwe+ADO5R8RbdFi7tuU7b/A2cJJH0Im0D18NRk5p5s4B3E5PMuO81KFw0ClN7J5SHVUJz7KOb0A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="demo.js"></script>
+    
+    <script type="module" src="demo.js"></script>
   </body>
 </html>
