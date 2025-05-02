@@ -1,0 +1,80 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>CamRent Showreel</title>
+    <link rel="stylesheet" href="demo.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="#">logo</a>
+      </div>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="#">About</a>
+        <a href="#">Videos</a>
+        <a href="#">Contacts</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <h1>CamRent</h1>
+      <div class="hero-copy">
+        <p>One Subscription, endless memories journey.</p>
+        <p>(scroll)</p>
+      </div>
+    </section>
+
+    <section class="intro">
+      <!-- Desktop -->
+      <div class="video-container-desktop">
+        <div class="video-preview">
+          <video
+            src="./asset/1743494589609.mp4"
+            autoplay
+            muted
+            loop
+            loading="lazy"
+            title="CamRent video"
+          ></video>
+        </div>
+        <div class="video-title">
+          <p></p>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Mobile -->
+      <div class="video-container-mobile">
+        <div class="video-preview">
+          <video
+            src="./asset/1743494589609.mp4"
+            controls
+            autoplay
+            muted
+            loop
+            loading="lazy"
+            title="CamRent video"
+          ></video>
+        </div>
+        <div class="video-title">
+          <p>PRO Showreel</p>
+          <p>2023 - 2024</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="outro">
+      <p>Lorem ipsum dolor sit amet.</p>
+    </section>
+
+    <!-- Smooth scroll / Lenis + GSAP -->
+    <script type="module" src="demo.js"></script>
+  </body>
+</html>
