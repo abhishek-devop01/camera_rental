@@ -20,7 +20,7 @@ function landingPage(){
     gsap.ticker.add((time) => lenis.raf(time * 1000));
     gsap.ticker.lagSmoothing(0);
   
-    // breakpoints with consistent prop names
+ 
     const breakpoints = [
       { maxWidth: 1000, translateY: -135, movementMultiplier: 450 },
       { maxWidth: 1100, translateY: -130, movementMultiplier: 500 },
@@ -50,7 +50,7 @@ function landingPage(){
       scale: 0.25,
       fontSize: 80,
       gap: 2,
-      targetMouseX: 0,
+      targetMouseX: 10,
       currentMouseX: 0,
     };
   
@@ -67,7 +67,7 @@ function landingPage(){
     gsap.timeline({
       scrollTrigger: {
         trigger: ".intro",
-        start: "top center",
+        start: "top 30%",
         end: "top 10%",
         scrub: true,
         onUpdate(self) {
@@ -78,7 +78,7 @@ function landingPage(){
             0,
             p
           );
-          animationState.scale = gsap.utils.interpolate(0.25, 1, p);
+          animationState.scale = gsap.utils.interpolate(0.25, 1.09, p);
           animationState.gap = gsap.utils.interpolate(2, 1, p);
   
           if (p <= 0.4) {

@@ -10,8 +10,8 @@ document.addEventListener("DOMContentLoaded", function(){
           },
           {
                id: "#card-2",
-               endTranslateX: -800,
-               rotate:-10
+               endTranslateX: -700,
+               rotate:10
           },
           {
                id: "#card-3",
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function(){
           {
                id: "#card-4",
                endTranslateX: -500,
-               rotate:-10
+               rotate:10
           },
      ];
 

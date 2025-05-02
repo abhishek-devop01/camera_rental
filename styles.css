@@ -21,7 +21,6 @@ nav{
   justify-content: space-between;
   align-items: center;
   padding: 20px 20px;
-  
   /* height: 60px; */
   /* background-color: #333; */
 }
@@ -133,15 +132,21 @@ main {
     /* color: white; */
   }
   nav {
-    /* position: fixed; */
+    position: sticky;
     /* background-color: #000; */
     top: 0;
-    padding: 20px 20px;
-    /* background-color: red; */
+    padding: 5px 20px;
+    /* background-color: rgba(219, 216, 216, 0.527); */
+    backdrop-filter: blur(20px);
   }
 
   #logo {
     font-size: 3.2rem;
+  }
+  #href{
+    font-size: 1.12rem;
+    mix-blend-mode: difference;
+
   }
 
   #menu {
@@ -309,7 +314,7 @@ main {
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    height: 1600vh;
+    height: 100vh;
     position: relative;
   }
   .wrapper-404{
@@ -329,15 +334,15 @@ main {
     z-index: -9999;
   }
   #card-1{
-    top: 50%;
+    top: 35%;
     left: 20%;
   }
   #card-2{
-    top: 25%;
+    top: 10%;
     left: 40%;
   }
   #card-3{
-    top: 45%;
+    top: 35%;
     left: 60%;
   }
   #card-4{
@@ -355,7 +360,7 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 60%;
+    width: 70%;
     font-size: 2rem;
     font-weight: lighter;
     text-align: center;
